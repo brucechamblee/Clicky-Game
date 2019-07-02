@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "dogName": "SpongeBob",
+    "image": "./images/dog1.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea"
+  },
+  {
+    "id": 2,
+    "dogName": "Mr. Krabs",
+    "image": "./images/dog2.jpg",
+    "occupation": "Restaurant Owner",
+    "location": "A Giant Anchor"
+  },
+  {
+    "id": 3,
+    "dogName": "Squidward",
+    "image": "./images/dog3.jpg",
+    "occupation": "Cashier",
+    "location": "An Easter Island Head"
+  },
+  {
+    "id": 4,
+    "dogName": "Dexter",
+    "image": "./images/dog4.jpg",
+    "occupation": "Boy Genius",
+    "location": "A Secret Laboratory"
+  },
+  {
+    "id": 5,
+    "dogName": "Courage",
+    "image": "./images/dog5.jpg",
+    "occupation": "A Cowardly Dog",
+    "location": "Nowhere, Kansas"
+  },
+  {
+    "id": 6,
+    "dogName": "Doug Funnie",
+    "image": "./images/dog6.jpg",
+    "occupation": "Student",
+    "location": "Bluffington"
+  },
+  {
+    "id": 7,
+    "dogName": "Bugs Bunny",
+    "image": "./images/dog7.jpg",
+    "occupation": "Looney Toon",
+    "location": "A Rabbit Burrow"
+  },
+  {
+    "id": 8,
+    "dogName": "Johnny Bravo",
+    "image": "./images/dog8.jpg",
+    "occupation": "Ladies Man",
+    "location": "Aron City"
+  },
+  {
+    "id": 9,
+    "dogName": "Tommy Pickles",
+    "image": "./images/dog9.jpg",
+    "occupation": "Adventurer",
+    "location": "California"
+  },
+  {
+    "id": 10,
+    "dogName": "Rocko",
+    "image": "./images/dog10.jpg",
+    "occupation": "Cashier",
+    "location": "O-Town, California"
+  }
+]
