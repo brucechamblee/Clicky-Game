@@ -1,4 +1,13 @@
-.navBar {
-  background: gray;
+.navbar {
+  background: #5133A4;
+  color: white;
   width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.p-2 h3 {
+  justify-content: center;
+  vertical-align: middle;
+
 }

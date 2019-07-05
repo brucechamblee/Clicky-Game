@@ -4,12 +4,13 @@ import "./style.css";
 const Nav = (props)=>{
   console.log(props)
   return (
-    <nav class="navbar navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1">Navbar</span>
-    <h5>Top Score: {props.topScore}</h5>
-    <h5>Score: {props.score}</h5>
-    </nav>
-     
+    <div className="navbar">
+      <div className="col-xl-4 h3">Clicky Game</div>
+      <div className="col-xl-4 h3">Click an image to Begin</div>
+      <div className="col-xl-4 h3">
+        Top Score: {props.topScore} | Score: {props.score}
+      </div>
+    </div>
   );
 }
 
