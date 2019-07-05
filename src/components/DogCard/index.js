@@ -4,6 +4,7 @@ import "./style.css";
 function DogCard(props) {
   return (
     <div className="card">
+      <span onClick={() => props.shuffleDogs(props.id)}>
       <div className="img-container">
         <img alt={props.name} src={props.image} />
       </div>
@@ -20,8 +21,6 @@ function DogCard(props) {
           </li>
         </ul>
       </div>
-      <span onClick={() => props.removeDog(props.id)} className="remove">
-        𝘅
       </span>
     </div>
   );

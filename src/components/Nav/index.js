@@ -2,11 +2,14 @@ import React from "react";
 import "./style.css";
 
 const Nav = (props)=>{
+  console.log(props)
   return (
-    <div className=".navBar">
-        <h5>{props.topScore}</h5>
-        <h5>{props.score}</h5>
-    </div>
+    <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Navbar</span>
+    <h5>Top Score: {props.topScore}</h5>
+    <h5>Score: {props.score}</h5>
+    </nav>
+     
   );
 }
 

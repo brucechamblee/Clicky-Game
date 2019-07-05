@@ -5,31 +5,47 @@ import Jumbotron from "./components/Jumbotron";
 import Nav from "./components/Nav";
 import dogs from "./dogs.json";
 
+let dogsClicked = []
+
 class App extends Component {
-  // Setting this.state.friends to the friends json array
   state = {
     dogs,
     topScore: 0,
-    score: 0,
-    dogsClicked: []
+    score: 0
   };
 
-  removeDog = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const dogs = this.state.dogs.filter(dog => dog.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ dogs });
+  shuffleDogs = id => {
+    const dogShuffle = this.state.dogs.sort(() => Math.random() - 0.5);
+    this.setState({
+      dogs: dogShuffle
+    });
+    if (dogsClicked.includes(id)) {
+      if (this.state.topScore < this.state.score) {
+        this.setState({
+          topScore: this.state.score
+        });
+      }
+      this.setState({
+        score: 0
+      });
+      dogsClicked = [];
+    } else {
+      dogsClicked.push(id);
+      this.setState({
+        score: this.state.score + 1
+      });
+    }
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
+    console.log(this.state);
     return (
       <Container>
-        <Nav>{this.state.topScore} {this.state.score}</Nav>
+        <Nav topScore={this.state.topScore} score={this.state.score} />
         <Jumbotron>Clicky the Dog Game</Jumbotron>
         {this.state.dogs.map(dog => (
           <DogCard
-            removeDog={this.removeDog}
+            shuffleDogs={this.shuffleDogs}
             id={dog.id}
             key={dog.id}
             name={dog.dogName}
